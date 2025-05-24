@@ -94,7 +94,7 @@ const SignUpFormComponent = () => {
                             </div>
                     </form>
                 </Form>
-                <Button type="submit" variant="outline" className="w-full h-[45px] cursor-pointer d-flex items-center"><img className="h-[35px]" src={googleIcon} alt="Goo icon" /></Button>
+                <Button type="submit" variant="outline" className="w-full h-[45px] cursor-pointer d-flex items-center font-ubuntu"><img className="h-[35px]" src={googleIcon} alt="Google_icon" /> Continue with google</Button>
             </div>
         </>
     )
