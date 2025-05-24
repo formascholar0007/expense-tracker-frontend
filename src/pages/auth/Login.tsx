@@ -1,10 +1,16 @@
+import AuthComponents from "./_components/AuthComponents";
+import LoginFormComponent from "./_components/LoginFormComponent";
 
 
 const LoginPage = () => {
     return (
-        <div>
-            this is login page
-        </div>
+        <>
+            <AuthComponents
+                title="Login"
+                description="Login to your account"
+                form={<LoginFormComponent/>}
+            />
+        </>
     )
 };
 

@@ -1,27 +1,26 @@
 import Description from "@/components/custom/Description";
 import Heading from "@/components/custom/Heading";
-import FormComponent from "./FormComponent";
-
-const SignUpComponents = () => {
+import type { AuthProps } from "@/interfaces/Auth.types";
+const AuthComponents = ({title, description, form}: AuthProps) => {
     return (
         <>
             <div className="main-wrapper h-[90%] flex flex-col">
                 <div className="heading space-y-1">
                     <Heading
-                        title="Create an account."
-                        className="text-4xl font-[500] font-ubuntu"
+                        title={title}
+                        className="text-3xl font-[800] font-ubuntu"
                     />
                     <Description
-                        description="Enter your details to create an account."
-                        className="text-lg text-gray-400 font-ubuntu"
+                        description={description}
+                        className="text-md text-gray-400 font-ubuntu"
                     />
                 </div>
                 <div className="form">
-                    <FormComponent />
+                   {form}
                 </div>
             </div>
         </>
     )
 };
 
-export default SignUpComponents;
+export default AuthComponents;

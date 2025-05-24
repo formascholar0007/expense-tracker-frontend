@@ -9,7 +9,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Button } from "@/components/ui/button";
 import { Separator } from '@/components/ui/separator'
 import googleIcon from '@/assets/g.svg'
-const FormComponent = () => {
+const SignUpFormComponent = () => {
 
     const formSchema = z.object({
         name: z.string().min(2),
@@ -100,4 +100,4 @@ const FormComponent = () => {
     )
 };
 
-export default FormComponent;
+export default SignUpFormComponent;

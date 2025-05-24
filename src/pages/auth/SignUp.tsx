@@ -1,10 +1,16 @@
-import SignUpComponents from "./_components/SignUpComponents";
+import AuthComponents from "./_components/AuthComponents";
+import SignUpFormComponent from "./_components/SignUpFormComponent";
+
 
 const SignUpPage = () => {
     return (
-       <>
-           <SignUpComponents />
-       </>
+        <>
+            <AuthComponents
+                title="Create Account"
+                description="Enter your details to create a new account"
+                form={<SignUpFormComponent />}
+            />
+        </>
     )
 };
 

@@ -1,7 +1,6 @@
 import { Outlet } from "react-router-dom";
-import image from '../../assets/dummy.jpg';
+import image from '@/assets/dummy.jpg';
 const AuthLayout = () => {
-    console.log("counter");
     return (
         <>
             <div className="flex h-screen overflow-hidden p-[5px] justify-between height-[100vh]">
